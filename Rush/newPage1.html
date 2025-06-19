@@ -3,10 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varunya</title>
+    <title>Poonyapat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        
+        body {
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            
+            /* ใช้งาน Flexbox สำหรับส่วนหัว */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-right: 1.5rem;
+        }
+        
+        .department-info {
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        section {
+            padding: 2rem 15%;
+        }
+        
+        /* Section 1 - ข้อมูลคณะและสาขา */
+        .faculty-section {
+            background-color: #f9f9f9;
+        }
+        
+        /* Section 2 - ข้อมูลสาขาวิชา */
+        .program-section {
+            background-color: white;
+        }
+        
+        .program-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .program-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Section 3 - ติดต่อ */
+        .contact-section {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .contact-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                padding: 2rem 8%;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .program-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>ยินดีต้อนรับสู่หน้าใหม่</h1>
-    <p>ครุศาสตร์นวัตกรรมเทคโนโลยีการออกแบบสภาพแวดล้อมภายใน</p>
+    <!-- Section 1: ข้อมูลคณะและสาขา -->
+    <section class="faculty-section">
+        <header>
+            <div class="logo-container">
+                <!-- ใช้ placeholder สำหรับรูปโลโก้คณะ -->
+                <image src="kmitl-logoThai-1" class="logo">
+                <div class="department-info">
+                    <h1>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</h1>
+                    <h2>สาขาวิชานวัตกรรมเทคโนโลยีการออกแบบ</h2>
+                </div>
+            </div>
+            
+            <!-- รูปภาพประกอบคณะ -->
+            <image src="kmitl-logoThai-1" >
+        </header>
+    </section>
+    
+    <!-- Section 2: ข้อมูลสาขาวิชา -->
+    <section class="program-section">
+        <h2>เกี่ยวกับสาขาวิชาของเรา</h2>
+        
+        <div class="program-details">
+            <div class="program-card">
+                <h3>ประวัติความเป็นมา</h3>
+                <p>คณะครุศาสตร์อุตสาหกรรม สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง จัดตั้งขึ้นเมื่อวันที่ 10 พฤศจิกายน พ.ศ.2520 ด้วยความคิดริเริ่มของ ศาสตราจารย์ ดร.วิทยา เพียรวิจิตร รองอธิการบดีสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+            </div>
+            
+            <div class="program-card">
+                <h3>หลักสูตรสาขาวิชานวัตกรรมและเทคโนโลยีการออกแบบ</h3>
+                <ul>
+                    <li>หลักสูตรมุ่งส่งเสริมผู้เรียนให้มีศักยภาพทางวิชาการด้านนวัตกรรมและเทคโนโลยีการออกแบบ พร้อมประยุกต์ใช้ศาสตร์การออกแบบเพื่อสร้างสรรค์นวัตกรรม และผลิตครูช่างที่มีคุณสมบัติสอดคล้องตามมาตรฐานวิชาชีพครูและมาตรฐานการศึกษาของชาติ ผู้เรียนจะมีความรู้ทั้งในภาคทฤษฎีและปฏิบัติ มีคุณธรรม จริยธรรม ทำนุบำรุงศิลปวัฒนธรรม และรักษาสิ่งแวดล้อม อีกทั้งหลักสูตรยังสนับสนุนการศึกษาวิจัยและการบริการวิชาการ เพื่อขับเคลื่อนการพัฒนาประเทศให้มั่นคงและยั่งยืน</li>
+                </ul>
+            </div>
+            
+            <div class="program-card">
+                <h3>โครงสร้างของหลักสูตร</h3>
+                <ul>
+                    <li>หลักสูตรปริญญาตรี 4 ปี
+รับทั้งนักศึกษาไทยและนักศึกษาต่างชาติ จํานวนหน่วยกิตรวมตลอดหลักสูตร 132 หน่วยกิต</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 3: ติดต่อ -->
+    <section class="contact-section">
+        <h2 style="color: white; border-color: white;">ช่องทางการติดต่อ</h2>
+        
+        <p style="text-align: center;">สนใจข้อมูลเพิ่มเติมหรือมีคำถามเกี่ยวกับสาขาวิชา กรุณาติดต่อเราได้ทางช่องทางต่อไปนี้</p>
+        
+        <div class="contact-links">
+            <a href="tel:+663799728" class="contact-button">โทรศัพท์: 0863799728 </a>
+        </div>
+    </section>
 </body>
 </html>

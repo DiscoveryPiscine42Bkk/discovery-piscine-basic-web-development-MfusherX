@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าหลัก</title>
-</head>
-<body>
+    <title>Main Page</title>
     <style>
         body {
-            background-color: rgb(250, 157, 52); /* ตั้งค่าพื้นหลังเป็นสีชมพู */
-        }
-        h1 {
-            color: white; /* ตั้งค่าหัวข้อเป็นสีขาว */
-            text-align: center; /* จัดกลาง */
+            background-color: rgb(250, 250, 250);
+            color: #333; /* เปลี่ยนสีตัวอักษรให้เข้ากับพื้นหลัง */
+            font-family: Arial, sans-serif; /* เปลี่ยนฟอนต์ */
         }
         .image-container {
-            display: flex;
-            justify-content: space-around; /* จัดภาพให้อยู่ข้างๆ กัน */
+            display: flex; 
+            justify-content: space-around; /* จัดแนวปุ่มให้อยู่กลาง */
+            margin: 20px; 
         }
         hr {
-            margin: 20px 0; /* ค่าต่างๆ สำหรับเส้นแบ่ง */
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 15px; /* เพิ่มความกว้างและความสูงของปุ่ม */
+            margin: 5px;
+            cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ตรงปุ่ม */
+            border: none; /* ลบเส้นขอบ */
+            border-radius: 5px; /* เพิ่มมุมโค้งให้ปุ่ม */
+            background-color: #007bff; /* เปลี่ยนสีปุ่มให้สดใส */
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3; /* เปลี่ยนสีเมื่อชี้เมาส์เหนือลูกบิด */
         }
     </style>
-    <h1>ยินดีต้อนรับเว็บไซร์ของพวกเรา</h1>
-    <button onclick="window.location.href='newPage1.html'">Poonyapat</button>
-    <button onclick="window.location.href='newPage2.html'">Varunya</button>
+</head>
+<body>
+    <header>
+        <h1>ยินดีต้อนรับสู่หน้าเว็บของเรา</h1>
+    </header>
+    
+    <main>
+        <div class="image-container">
+            <button onclick="window.location.href='newPage1.html'">Poonypat</button>
+            <button onclick="window.location.href='newPage2.html'">Yarunya</button>
+        </div>
+        <hr>
+    </main>
 </body>
+ <image scr="kmitl-logoThai-1" width="30%" height="30%"
 </html>
 
