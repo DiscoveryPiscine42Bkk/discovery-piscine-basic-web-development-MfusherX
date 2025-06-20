@@ -1,0 +1,44 @@
+     body, html {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+     }
+
+     .parallax-bg {
+         background-image: url('DSC00286 (1)'); /* เปลี่ยนเป็น URL ของรูปภาพที่ต้องการ */
+         height: 100vh;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .message {
+         background-color: rgba(0, 0, 0, 0.5);
+         color: white;
+         padding: 20px;
+         border-radius: 5px;
+     }
+
+     .black-block {
+         background-color: black;
+         color: white;
+         padding: 50px;
+         text-align: center;
+     }
+
+     .parallax-bg2 {
+         background-image: url('image2.jpg'); /* เปลี่ยนเป็น URL ของรูปภาพที่สอง */
+         height: 100vh;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     
